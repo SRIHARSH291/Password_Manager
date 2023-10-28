@@ -93,7 +93,7 @@ var1 = IntVar()
 
 
 
-# Title of your GUI window 
+# Title of GUI window 
 root.title("Python Password Manager") 
 
 
@@ -109,9 +109,8 @@ copy_button.grid(row=0, column=2)
 generate_button = Button(root, text="Generate", command=generate) 
 generate_button.grid(row=0, column=3) 
 
-# Radio Buttons for deciding the 
-# strength of password 
-# Default strength is Medium 
+""" Radio Buttons for deciding the strength of password Default strength is Medium """
+
 radio_low = Radiobutton(root, text="Low", variable=var, value=1) 
 radio_low.grid(row=1, column=2, sticky='E') 
 radio_middle = Radiobutton(root, text="Medium", variable=var, value=0) 
